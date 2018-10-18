@@ -72,6 +72,7 @@
 
 body, html {
     font-size: 100% !important;
+    overflow-x:hidden;
 }
 
 /*div, section, article {*/
@@ -293,6 +294,7 @@ a.jn-btn--white.active {
 @media(max-width: 768px) {
     .jn-work-item {
         margin: 0 auto 50px;
+        max-width: 90%;
     }
 
     .jn-work-item-left {
@@ -368,6 +370,26 @@ a.jn-btn--white.active {
     height: 100%;
 }
 
+@media(max-width: 400px) {
+    .jn-skill-img {
+        display: none;
+    }
+
+    .jn-methods li::before {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .jn-skill-item {
+        padding-left: 12px;
+    }
+
+    .jn-skills-collection {
+        padding: 0 12px;
+    }
+}
+
 .jn-methods {
     list-style: none;
     counter-reset: method-counter;
@@ -390,12 +412,31 @@ a.jn-btn--white.active {
     position: relative;
     top: -20px;
     font-size: 86px;
+    min-width: 105px;
 }
 
 .jn-method {
     padding-right: 64px;
 }
 
+@media(max-width: 576px) {
+    .jn-methods li::before {
+        font-size: 64px;
+        min-width: 80px;
+        margin-right: 20px;
+        top: -10px;
+    }
+}
+
+@media(max-width: 768px) {
+    .jn-methods li {
+        padding: 0 24px 16px;
+    }
+
+    .jn-method {
+        padding: 0 12px;
+    }
+}
 
 .jn-contact {
     background-color: #0A0A0A;
