@@ -1,0 +1,414 @@
+@font-face {
+    font-family: proxima-nova;
+    src: url('/fonts/300-normal.woff2') format("woff2"),
+        url('/fonts/300-normal.woff') format("woff"),
+        url('/fonts/300-normal.otf') format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('/fonts/400-normal.woff2') format("woff2"),
+    url('/fonts/400-normal.woff') format("woff"),
+    url('/fonts/400-normal.otf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('/fonts/500-normal.woff2') format("woff2"),
+    url('/fonts/500-normal.woff') format("woff"),
+    url('/fonts/500-normal.otf') format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('/fonts/600-normal.woff2') format("woff2"),
+    url('/fonts/600-normal.woff') format("woff"),
+    url('/fonts/600-normal.otf') format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('/fonts/700-normal.woff2') format("woff2"),
+    url('/fonts/700-normal.woff') format("woff"),
+    url('/fonts/700-normal.otf') format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('/fonts/400-italic.woff2') format("woff2"),
+    url('/fonts/400-italic.woff') format("woff"),
+    url('/fonts/400-italic.otf') format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('/fonts/600-italic.woff2') format("woff2"),
+    url('/fonts/600-italic.woff') format("woff"),
+    url('/fonts/600-italic.otf') format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('/fonts/700-italic.woff2') format("woff2"),
+    url('/fonts/700-italic.woff') format("woff"),
+    url('/fonts/700-italic.otf') format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+body, html {
+    font-size: 100% !important;
+}
+
+/*div, section, article {*/
+    /*border: 1px solid red;*/
+/*}*/
+
+body {
+    overflow-x: hidden;
+    font-family: proxima-nova, Arial, sans-serif;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 6px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+h3 {
+    font-size: 64px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+
+p, div, span {
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+section {
+    padding: 30px 0;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 60px 0;
+    }
+}
+
+.jn-intro-description {
+    font-size: 22px;
+}
+
+.jn-work-description {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 36px;
+}
+
+.jn-skill-item h3 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.jn-skills-collection h3 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.jn-methods h3 {
+    font-size: 36px;
+    color: #0e62ff;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 34px;
+        margin-bottom: 16px;
+    }
+
+    .jn-intro-description {
+        font-size: 16px;
+    }
+
+    .jn-work-description {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .jn-skill-item h3 {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+    }
+
+    .jn-skills-collection h3 {
+        font-size: 24px;
+    }
+
+    .jn-method {
+        padding-right: 0px;
+    }
+}
+
+.jn-skill-item {
+    margin-bottom: 20px;
+}
+
+a.jn-btn,
+a.jn-btn:hover,
+a.jn-btn:focus,
+a.jn-btn:active,
+a.jn-btn.active {
+    outline: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #222222;
+}
+
+a.jn-btn--big,
+a.jn-btn--big:hover,
+a.jn-btn--big:focus,
+a.jn-btn--big:active,
+a.jn-btn--big.active {
+    font-size: 28px;
+}
+
+a.jn-btn--white,
+a.jn-btn--white:hover,
+a.jn-btn--white:focus,
+a.jn-btn--white:active,
+a.jn-btn--white.active {
+    color: white;
+}
+
+
+.jn-header {
+    /*background-attachment: scroll;*/
+    background: url('{{ site.baseurl }}/img/mockup_desk.png') bottom center no-repeat #f1f0f1;
+    /*background-position: center center;*/
+    /*background-repeat: none;*/
+    /*background-size: cover;*/
+    /*background-position-y: bottom;*/
+    background-size: 1600px;
+    min-height: 750px;
+    height: 100vh;
+}
+
+.jn-intro-text {
+    padding-bottom: 64px;
+}
+
+@media(max-width: 768px) {
+    .jn-header {
+        background-size: 200%;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .jn-header {
+        background-position-x: 70%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .jn-header {
+        background: url('{{ site.baseurl }}/img/mockup_book.png') bottom center no-repeat,
+            url('{{ site.baseurl }}/img/mockup_desk.png') bottom center no-repeat #f1f0f1;
+        background-size: 1600px;
+    }
+
+}
+
+@media(min-width: 1600px) {
+
+}
+
+
+.jn-work-item {
+    max-width: 536px;
+}
+
+
+.jn-previous-work-img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.jn-previous-work-img.jn-img-oversize {
+    width: 130%;
+    max-width: 900px;
+}
+
+.jn-work-item {
+    padding: 0 24px;
+}
+
+@media(max-width: 768px) {
+    .jn-work-item {
+        margin: 0 auto 50px;
+    }
+
+    .jn-work-item-left {
+        margin-top: 50px;
+    }
+
+    .jn-previous-work-img,
+    .jn-previous-work-img.jn-img-oversize {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1540px) {
+    .jn-previous-work-img.jn-img-oversize {
+        position: relative;
+        left: 20%;
+        width: 130%;
+        max-width: 900px;
+    }
+
+    .jn-work-item-left {
+        margin-left: 30%;
+    }
+}
+
+.jn-skills-section {
+    background-color: #0e62ff;
+    color: white;
+}
+
+.jn-skill-img {
+    width: 80px;
+    min-width: 80px;
+}
+
+.jn-skill-text {
+    padding-right: 24px;
+}
+
+.jn-skills-collection {
+    width: 100%;
+    margin-bottom: 48px;
+    margin-right: 20px;
+    row-gap: 5px
+}
+
+.jn-skills-collection p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+@media(min-width: 1200px) {
+    .jn-skills-collection {
+        padding-left: 80px;
+    }
+}
+
+.jn-skill-barometer {
+    width: 100%;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #ebf2ff;
+    margin-bottom: 16px;
+
+}
+
+.jn-skill-bar {
+    background-color: #f5a623;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.jn-methods {
+    list-style: none;
+    counter-reset: method-counter;
+    margin: 0;
+    padding: 0;
+}
+
+.jn-methods li {
+    padding-bottom: 64px;
+    counter-increment: method-counter;
+    display: flex;
+}
+
+.jn-methods li::before {
+    content: "0" counter(method-counter);
+    font-weight: bold;
+    margin-right: 40px;
+    line-height: 1;
+    color: #0e62ff;
+    position: relative;
+    top: -20px;
+    font-size: 86px;
+}
+
+.jn-method {
+    padding-right: 64px;
+}
+
+
+.jn-contact {
+    background-color: #0A0A0A;
+    color: white;
+    padding: 120px 0 160px;
+}
+
+.jn-contact-message {
+    text-transform: none;
+    font-size: 42px;
+    font-weight: 600;
+    max-width: 620px;
+    margin: 0 auto 64px;
+    letter-spacing: 2px;
+}
+
