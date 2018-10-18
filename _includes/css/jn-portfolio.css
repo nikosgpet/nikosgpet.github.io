@@ -198,6 +198,10 @@ section {
     margin-bottom: 20px;
 }
 
+button {
+    outline: 0;
+}
+
 a.jn-btn,
 a.jn-btn:hover,
 a.jn-btn:focus,
@@ -453,3 +457,8 @@ a.jn-btn--white.active {
     letter-spacing: 2px;
 }
 
+@media(max-width: 768px) {
+    .jn-contact-message {
+        max-width: 80vw;
+    }
+}

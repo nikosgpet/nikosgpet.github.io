@@ -4,11 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.navbar-default {
+    background-color: #f1f0f1;
+}
+
 .navbar-default .navbar-nav li {
     padding-left: 24px;
 }
 
-.navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav li a, button {
     /*text-transform: uppercase;*/
     font-weight: 600;
     color: #222222;
@@ -30,7 +34,21 @@
 }
 
 
+/*@media(max-width: 768px) {*/
+    /*.navbar {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+
 @media(min-width:768px) {
+    .navbar-default {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
     .navbar-default .navbar-brand {
         padding-left: 1px;
     }
