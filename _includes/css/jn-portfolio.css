@@ -251,6 +251,7 @@ a.jn-btn--white.active {
 @media(max-width: 768px) {
     .jn-header {
         background-size: 200%;
+        min-height: 580px;
     }
 }
 
