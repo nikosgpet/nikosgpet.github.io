@@ -1,46 +1,68 @@
-<!-- Services Section -->
-    <section id="work">
+{% assign links = site.works  %}
+
+{% for link in links %}
+    {% if link.title == page.title %}
+        {% unless forloop.first %}
+            {% assign prev = tmpprev %}
+        {% endunless %}
+        {% unless forloop.last %}
+            {% assign next = links[forloop.index] %}
+        {% endunless %}
+    {% endif %}
+    {% assign tmpprev = link %}
+{% endfor %}
+
+
+
+<section class="jn-work-header">
+    <div class="container">
         <div class="">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Previous Work</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="/img/mockup_paris8.png" class="jn-previous-work-img d-none d-md-inline" alt="Previous work at Paris 8">
-                </div>
-                <div class="col-md-6 d-flex align-items-center text-left">
-                    <div class="jn-work-item">
-                        <h3 class="jn-work-heading">Université Paris&nbsp;8</h3>
-                        <p class="jn-work-description">Creation of an intranet, a Knowledge Management System (KMS) and a CRM.</p>
-                        <a href="/paris8" class="jn-btn">Read more</a>
+            <div class="jn-work-header-background" style="background-color: {{ page.color }}"></div>
+
+            {% if prev %}
+                <a href="{{ prev.url}}" class="jn-btn-arrow jn-btn-previous">
+                    <div>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dreamin" transform="translate(-32.000000, -343.000000)" fill="#FFFFFF">
+                                    <polygon id="arrow_back_ios" points="63.125 348.375 41.5 370 63.125 391.625 58.375 396.375 32 370 58.375 343.625"></polygon>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
+                </a>
+            {% endif %}
+            {% if next %}
+                <a href="{{ next.url}}" class="jn-btn-arrow jn-btn-next">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="CNRS" transform="translate(-32.000000, -343.000000)" fill="#FFFFFF">
+                                <polygon id="arrow_back_ios" transform="translate(47.562500, 370.000000) scale(-1, 1) translate(-47.562500, -370.000000) " points="63.125 348.375 41.5 370 63.125 391.625 58.375 396.375 32 370 58.375 343.625"></polygon>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            {% endif %}
+
+            <div class="jn-work-intro-text text-center">
+                <h1>{{ page.title }}</h1>
+                <div class="jn-work-tags">
+                    {% for tag in page.tags %}
+                    <span class="jn-work-tag">{{ tag }}</span>
+                    {% endfor %}
                 </div>
+                <p>{{ page.description }}</p>
             </div>
-            <div class="row d-flex">
-                <div class="col-md-6 d-flex align-items-center text-left order-1 order-md-0">
-                    <div class="jn-work-item container jn-work-item-left">
-                        <h3 class="jn-work-heading">Dreamin</h3>
-                        <p class="jn-work-description">UX / UI design of an ad management dashboard to control revenue, KPIs, alerts, …</p>
-                        <a href="/dreamin" class="jn-btn">Read more</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="/img/mockup_dreamin.png" class="jn-previous-work-img jn-img-oversize" alt="Previous work at Paris 8">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="/img/mockup_cnrs.png" class="jn-previous-work-img" alt="Previous work at Paris 8">
-                </div>
-                <div class="col-md-6 d-flex align-items-center text-left">
-                    <div class="jn-work-item">
-                        <h3 class="jn-work-heading">CNRS & others</h3>
-                        <p class="jn-work-description">UX / UI design proposition for the dashboard of a critical application with 30K+ users.</p>
-                        <a href="/cnrs" class="jn-btn">Read more</a>
-                    </div>
-                </div>
-            </div>
+
+            <img class="jn-work-main-img" src="/img/{{ page.main-img }}" alt="{{ page.alt }}">
         </div>
-    </section>
+    </div>
+    <div class="container">
+        <div class="">
+        {% for img in page.images %}
+            <img class="jn-work-img" src="/img/{{ img }}" alt="{{ page.alts[forloop.index] }}">
+        {% endfor %}
+        </div>
+    </div>
+</section>
+

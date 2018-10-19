@@ -7,6 +7,13 @@ email: nikosgpet@gmail.com
 description: "Portfolio of Nikos Peteinatos"
 
 
+# Previous works
+collections:
+  works:
+    output: tree
+    permalink: /:collection/:title
+
+
 # Team names, titles and social links
 people:
 - name: Kay Garland

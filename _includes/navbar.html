@@ -1,7 +1,18 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-expand-md navbar-fixed-top">
+
+<style>
+    .navbar-default.navbar-shrink {
+        background-color: {{ page.color }};
+    }
+
+    .navbar-default .navbar-nav {
+        background-color: {{ page.color }};
+    }
+</style>
+
+    <nav class="navbar navbar-default navbar-expand-md navbar-fixed-top {{include.class}}">
         <div class="container">
-            <a class="navbar-brand page-scroll" href="#">{{site.title}}</a>
+            <a class="navbar-brand page-scroll" href="/#">{{site.title}}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 menu
             </button>
@@ -12,13 +23,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="page-scroll" href="#work">work</a>
+                        <a class="page-scroll" href="/#work">work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="page-scroll" href="#skills">about</a>
+                        <a class="page-scroll" href="/#skills">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="page-scroll" href="#contact">contact</a>
+                        <a class="page-scroll" href="/#contact">contact</a>
                     </li>
                 </ul>
             </div>
