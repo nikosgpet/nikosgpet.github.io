@@ -262,7 +262,7 @@ a.jn-btn--white.active {
 
 @media(max-width: 768px) {
     .jn-intro-text {
-        padding-top: 64px;
+        padding-top: 12vh;
     }
     .jn-header {
         background-size: 200%;
