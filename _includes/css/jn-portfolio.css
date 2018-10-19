@@ -215,6 +215,7 @@ a:focus,
 a:active,
 a.active {
     color: #222222;
+    text-decoration: none;
 }
 
 a.jn-btn,
@@ -223,7 +224,7 @@ a.jn-btn:focus,
 a.jn-btn:active,
 a.jn-btn.active {
     outline: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -254,6 +255,21 @@ a.jn-btn--white.active {
     color: white;
 }
 
+.jn-btn {
+    position: relative;
+    display: inline-block;
+}
+
+.jn-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    width: 75%;
+    height: 1px;
+    background-color: #111111;
+}
 
 .jn-header {
     background: url('{{ site.baseurl }}/img/mockup_desk.png') bottom center no-repeat #f1f0f1;
