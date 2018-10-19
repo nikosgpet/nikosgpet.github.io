@@ -91,9 +91,9 @@ body {
 
 h1 {
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.3;
     font-weight: 600;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 h2 {
@@ -223,6 +223,14 @@ a.jn-btn--big.active {
     font-size: 28px;
 }
 
+a.jn-btn--medium,
+a.jn-btn--medium:hover,
+a.jn-btn--medium:focus,
+a.jn-btn--medium:active,
+a.jn-btn--medium.active {
+    font-size: 18px;
+}
+
 a.jn-btn--white,
 a.jn-btn--white:hover,
 a.jn-btn--white:focus,
@@ -244,11 +252,18 @@ a.jn-btn--white.active {
     height: 100vh;
 }
 
+.jn-intro-description:last-of-type {
+    margin-bottom: 20px;
+}
+
 .jn-intro-text {
-    padding-bottom: 64px;
+    padding-top: 124px;
 }
 
 @media(max-width: 768px) {
+    .jn-intro-text {
+        padding-top: 64px;
+    }
     .jn-header {
         background-size: 200%;
         min-height: 580px;
