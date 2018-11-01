@@ -612,10 +612,6 @@ a.jn-btn--white:after {
     z-index: -1000;
 }
 
-.jn-work-intro-text {
-
-}
-
 .jn-nav-white,
 .jn-nav-white button,
 .jn-nav-white a,
@@ -703,6 +699,13 @@ a.jn-btn--white:after {
 .jn-work-intro-text p {
     width: 70%;
     margin: 0 auto 64px;
+}
+
+p.jn-work-intro-subtitle {
+    font-size: 15px;
+    position: relative;
+    bottom: 8px;
+    margin: 0 auto;
 }
 
 a.underline:hover, a.underline:focus {

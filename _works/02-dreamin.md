@@ -13,5 +13,5 @@ alt: image-alt
 client: Paris 8
 category: Web Development
 description: UX / UI design of an ad management dashboard to control revenue, KPIs, alerts, and generally manage the workflow of the company.
-
+subtitle: "* All names, figures, and statistics portrayed in the following designs are fictitious."
 ---
